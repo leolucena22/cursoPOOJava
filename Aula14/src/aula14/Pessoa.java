@@ -1,14 +1,14 @@
 package aula14;
 
 public class Pessoa {
-    
+
     protected String nome;
     protected int idade;
     protected char sexo;
     protected int experiencia;
-    
+
     protected void ganharExperiencia(int maisExp) {
-        this.setExperiencia(getExperiencia() + maisExp); 
+        this.setExperiencia(getExperiencia() + maisExp);
     }
 
     public String getNome() {
@@ -42,6 +42,5 @@ public class Pessoa {
     public void setExperiencia(int experiencia) {
         this.experiencia = experiencia;
     }
-    
-    
+
 }

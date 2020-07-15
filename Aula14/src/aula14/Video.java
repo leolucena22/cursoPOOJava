@@ -1,7 +1,7 @@
 package aula14;
 
 public class Video implements AcoesVideo {
-    
+
     private String titulo;
     private String avaliacao;
     private int views;
@@ -10,17 +10,19 @@ public class Video implements AcoesVideo {
 
     @Override
     public void play() {
-        
+        this.setReproduzindo(true);
+        System.out.println("Vídeo em reprodução");
     }
 
     @Override
     public void pause() {
-        
+        this.setReproduzindo(false);
+        System.out.println("Vídeo pausado");
     }
 
     @Override
     public void like() {
-        
+        setCurtidas(1);
     }
 
     public String getTitulo() {
@@ -62,7 +64,5 @@ public class Video implements AcoesVideo {
     public void setReproduzindo(boolean reproduzindo) {
         this.reproduzindo = reproduzindo;
     }
-    
-    
 
 }

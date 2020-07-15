@@ -1,11 +1,12 @@
 package aula14;
 
 public class Gafanhoto extends Pessoa {
+
     private String login;
     private int totAssistido;
-    
+
     public void viuMaisUm() {
-        setTotAssistido(getTotAssistido() + 1); 
+        setTotAssistido(getTotAssistido() + 1);
     }
 
     public String getLogin() {
@@ -22,6 +23,6 @@ public class Gafanhoto extends Pessoa {
 
     public void setTotAssistido(int totAssistido) {
         this.totAssistido = totAssistido;
-    } 
-    
+    }
+
 }
